@@ -15,19 +15,24 @@ var users = [
 ================*/
 var humans = [];
 
-
-
+for(var i = 0; i < users.length; i++) {
+    if (users[i].race === 'human') {
+        humans.push(users[i]);
+    }
+}
 
 test('q1', humans);
-
-
 
 /*==============
     Q2 -  Use JavaScript to retrieve the object in the array with the 'id' equal to 2.
 ================*/
 var leia;
 
-
+for(var i =0; i < users.length; i++) {
+    if (users[i].id === 2) {
+        leia = users[i];
+    }
+}
 
 test('q2', leia);
 
@@ -36,8 +41,9 @@ test('q2', leia);
 ================*/
 var totalAge = 0;
 
-
-
+for(var i=0; i < users.length; i++) {
+    totalAge += users[i].age; 
+}
 
 
 test('q3', totalAge);
@@ -46,9 +52,9 @@ test('q3', totalAge);
     Expected Output: userNames = ["luke.sky", "leia.org", "han.solo", "chewy"]
 ================*/
 var userNames = [];
-
-
-
+for(var i=0; i < users.length; i++) {
+    userNames.push(users[i].username);
+}
 
 test('q4', userNames);
 
@@ -57,7 +63,9 @@ test('q4', userNames);
 ================*/
 var numbers = [15,16,8,4,23,42]
 
-
+numbers = numbers.sort(function(a, b) {
+    return a > b;
+});
 
 test('q5', numbers);
 
@@ -67,19 +75,24 @@ test('q5', numbers);
 var replacement = 'Lorem ipsum dolor sit lorem consectetur adipisicing lorem. Numquam, dicta repellendus excepturi consequatur sint ipsum quibusdam delectus lorem laborum eveniet fuga officiis nesciunt nemo ab dignissimos eos doloremque consectetur quod praesentium reprehenderit. Incidunt voluptate, quo rerum mollitia adipisci nam dignissimos, ex cupiditate accusamus cumque sunt corrupti lorem vlorem nemo explicabo.';
 
 
+replacement = replacement.replace(/lorem/i, 'alrighty');
+
+
 test('q6', replacement);
 
 
 /*==============
     Q7 - What is the difference between .forEach() and .map()
-================*/
+
+    .map creates a new array, but they both iterate. 
+ ================*/
 
 /*==============
     Q8 - What is the difference between .filter() and .find()
+
+    filter creates a new array with all the matching elements, find only RETURNS the first matching element.
+
 ================*/
-
-
-
 
 
 function test(id,result){

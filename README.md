@@ -1,8 +1,3 @@
-# Assessment 3
-Complete the work in the CSS and JavaScript folder.  Submit your work via GitHub or Slack Private Message
-
-
-
 ## Point Break Down
 
 ### HTML/CSS/SCSS
