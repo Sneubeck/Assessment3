@@ -1,0 +1,41 @@
+
+.item{
+    border:1px solid black;
+    color:rgb(43, 43, 43);
+    background:#e7e7e7;
+    padding:25px;
+}
+
+@media only screen and (max-width: 575px) {
+    .item {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .item {
+        box-sizing: border-box;
+        max-width: 50%;
+        flex: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .item {
+        flex: 4;
+        
+    }
+}
