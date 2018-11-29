@@ -2,7 +2,9 @@
     Q1 - Write a media query for desktop first.  The break point needs to be at 960px;
 */
 
+@media only screen and (min-width: 960px) {
 
+}
 
 
 
@@ -10,15 +12,21 @@
     Q2 - Write a media query for mobile first.  The break point needs to be at 720px;
 */
 
-
+@media only screen and (max-width: 720px) {
+    
+}
 
 
 /*
     Q3 - What CSS property are you having the most trouble figuring out?
+
+    display:flex;
 */
+
 
 
 /*
     Q4 - What is the best CSS property and why?
+    
+    In my opinion, max and min width are both very helpful css properties. I value having responsive and efficient design. 
 */
-
